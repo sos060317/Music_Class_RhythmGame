@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CreateArrow : MonoBehaviour
 {
-    [SerializeField] private GameObject arrowPrefab;
+    [SerializeField] private GameObject UparrowPrefab;
+    [SerializeField] private GameObject DownarrowPrefab;
+    [SerializeField] private GameObject LeftarrowPrefab;
+    [SerializeField] private GameObject RightarrowPrefab;
     [SerializeField] private GameObject arrowParents;
 
     private void Update()
@@ -18,7 +21,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(-3, 0);
 
-            var arrow = Instantiate(arrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(UparrowPrefab, pos, Quaternion.identity);
 
             arrow.transform.parent = arrowParents.transform;
         }
@@ -27,7 +30,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(1, 0);
 
-            var arrow = Instantiate(arrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(DownarrowPrefab, pos, Quaternion.identity);
 
             arrow.transform.parent = arrowParents.transform;
         }
@@ -36,7 +39,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(-1, 0);
 
-            var arrow = Instantiate(arrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(LeftarrowPrefab, pos, Quaternion.identity);
 
             arrow.transform.parent = arrowParents.transform;
         }
@@ -45,7 +48,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(3, 0);
 
-            var arrow = Instantiate(arrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(RightarrowPrefab, pos, Quaternion.identity);
 
             arrow.transform.parent = arrowParents.transform;
         }
