@@ -138,4 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: 1e0b897d31203a944a43899d0027f5dc, type: 3}
   canBePress: 0
-  keyToPress: 273
+  keyToPress: 275

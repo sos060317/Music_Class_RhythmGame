@@ -21,7 +21,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(-3, 0);
 
-            var arrow = Instantiate(UparrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(UparrowPrefab, pos, Quaternion.Euler(0, 0, 90));
 
             arrow.transform.parent = arrowParents.transform;
         }
@@ -30,7 +30,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(1, 0);
 
-            var arrow = Instantiate(DownarrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(DownarrowPrefab, pos, Quaternion.Euler(0, 0, -90));
 
             arrow.transform.parent = arrowParents.transform;
         }
@@ -39,7 +39,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(-1, 0);
 
-            var arrow = Instantiate(LeftarrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(LeftarrowPrefab, pos, Quaternion.Euler(0, 0, 180));
 
             arrow.transform.parent = arrowParents.transform;
         }
@@ -48,7 +48,7 @@ public class CreateArrow : MonoBehaviour
         {
             Vector2 pos = new Vector2(3, 0);
 
-            var arrow = Instantiate(RightarrowPrefab, pos, Quaternion.identity);
+            var arrow = Instantiate(RightarrowPrefab, pos, Quaternion.Euler(0, 0, 0));
 
             arrow.transform.parent = arrowParents.transform;
         }
